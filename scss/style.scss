@@ -1,32 +1,16 @@
-$qizil: red;
-@mixin buttonStyle($bg, $color: white) {
-    border: none;
-    padding: 10px 20px;
-    background-color: $bg;
-    border-radius: 5px;
-    color: $color;
-    font-size: 20px;
-    cursor: pointer;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
 
-.add {
-    @include buttonStyle(green);
+ul,
+li {
+    text-decoration: none;
 }
 
-@mixin border( $border-radius-top, $border-radius-bottom, $border-radius-right, $border-radius-left) {
-    padding: 10px;
-}
-
-.card1 {
-    background-color: red;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 20px;
-    width: 300px;
-    color: white;
-    font-size: 30px;
-}
-
-.card2 {
-    @extend.card1;
+a {
+    list-style: none;
+    color: aqua;
 }
